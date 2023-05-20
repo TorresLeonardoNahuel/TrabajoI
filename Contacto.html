@@ -5,31 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="estilo/estilo.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./common.js"></script>
     <title>Contacto</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <img  src="img/logo.png" alt="Logo de mi empresa">
-                
-            </a>
-        </div>
-        <nav>
-            <ul class="menu">
-               <li><a href="./Empresa.html">Empresa</a></li>
-               <li><a href="./Productos.html">Productos</a></li>
-               <li><a href="./Registro.html">Registros</a></li>
-               <li><a href="./Mi_Cuenta.html">Mi Cuenta</a></li>
-               <li><a href="./Contacto.html">Contactos</a></li>
-            </ul>         
-        </nav>    
-    </header>
+    <!-- Incluir el encabezado -->
+  <div id="header"></div>
 
     <h2>Contáctanos</h2>
 
   <form action="/enviar_Contacto" method="POST">
-    <label for="nombre">Nombre:</label>
+    <label for="nombre">Nombre y Apellido:</label>
     <input type="text" id="nombre" name="nombre" required>
     
     <label for="email">Email:</label>
@@ -40,8 +27,7 @@
     
     <input type="submit" value="Enviar">
   </form>
-    <footer>
-
-    </footer>
+    <!-- Incluir el pie de página -->
+  <div id="footer"></div>
 </body>
 </html>

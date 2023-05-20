@@ -1,5 +1,9 @@
+html{
+  height: 100%;
+}
 body {
   /* font-family: Arial, sans-serif; */
+  height: 100%;
 }
 header {
   display: flex;
@@ -31,7 +35,7 @@ header {
 }
 
 nav{
-  display: flex;
+   display: flex;
     align-items: flex-end;
     justify-content: flex-end;
     width: 100%;
@@ -221,4 +225,16 @@ ul.menu{
       margin-top: 10px;
       text-align: right;
       font-weight: bold;
+    }
+    div#footer{
+    display: flex;
+  
+    align-items: flex-end;
+    justify-content: center;
+    height: 60px;
+      background-color: #fcedf6;
+      text-align: center;
+      line-height: 60px;
+    
+    
     }
