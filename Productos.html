@@ -26,7 +26,94 @@
         </nav>    
     </header>
 
-    Productos
+    
+        <h1>Tienda de Productos</h1>
+      
+    
+      <main>
+        <h2>Nuestros Productos</h2>
+    
+        <div class="product">
+          <img src="imagen1.jpg" alt="Producto 1">
+          <div class="details">
+            <h3>Producto 1</h3>
+            <p>Descripción del Producto 1.</p>
+            <p>Precio: $19.99</p>
+            <button class="add-to-cart" onclick="agregarAlCarrito('Producto 1', 19.99)">Agregar al Carrito</button>
+          </div>
+        </div>
+    
+        <div class="product">
+          <img src="imagen2.jpg" alt="Producto 2">
+          <div class="details">
+            <h3>Producto 2</h3>
+            <p>Descripción del Producto 2.</p>
+            <p>Precio: $29.99</p>
+            <button class="add-to-cart" onclick="agregarAlCarrito('Producto 2', 29.99)">Agregar al Carrito</button>
+          </div>
+        </div>
+    
+        <div class="product">
+          <img src="imagen3.jpg" alt="Producto 3">
+          <div class="details">
+            <h3>Producto 3</h3>
+            <p>Descripción del Producto 3.</p>
+            <p>Precio: $39.99</p>
+            <button class="add-to-cart" onclick="agregarAlCarrito('Producto 3', 39.99)">Agregar al Carrito</button>
+          </div>
+        </div>
+    
+        <div class="cart">
+          <h3>Carrito de Compras</h3>
+          <div class="item">
+            <span class="name">Producto 1</span>
+            <span class="price">$19.99</span>
+          </div>
+          <div class="item">
+            <span class="name">Producto 2</span>
+            <span class="price">$29.99</span>
+          </div>
+          <div class="item">
+            <span class="name">Producto 3</span>
+            <span class="price">$39.99</span>
+          </div>
+          <div class="total">
+            Total: $89.97
+          </div>
+        </div>
+      </main>
+    
+      <script>
+        function agregarAlCarrito(nombre, precio) {
+            var cart = document.querySelector('.cart');
+            var item = document.createElement('div');
+            item.classList.add('item');
+            item.innerHTML = '<span class="name">' + nombre + '</span><span class="price">$' + precio.toFixed(2) + '</span>';
+            var removeButton = document.createElement('button');
+            removeButton.classList.add('remove');
+            removeButton.textContent = 'Eliminar';
+            removeButton.addEventListener('click', function() {
+                quitarDelCarrito(item, precio);
+            });
+            item.appendChild(removeButton);
+            cart.insertBefore(item, cart.firstChild);
+
+            var totalElement = document.querySelector('.total');
+            var total = parseFloat(totalElement.innerHTML.split(':')[1].trim().slice(1));
+            total += precio;
+            totalElement.innerHTML = 'Total: $' + total.toFixed(2);
+            }
+
+        function quitarDelCarrito(item, precio) {
+            var cart = document.querySelector('.cart');
+            cart.removeChild(item);
+
+            var totalElement = document.querySelector('.total');
+            var total = parseFloat(totalElement.innerHTML.split(':')[1].trim().slice(1));
+            total -= precio;
+            totalElement.innerHTML = 'Total: $' + total.toFixed(2);
+            }
+      </script>
     <footer>
 
     </footer>

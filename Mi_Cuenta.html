@@ -26,7 +26,33 @@
         </nav>    
     </header>
 
-    Mi cuenta
+    <h2>Datos de Mi Cuenta</h2>
+  <form action="/Editar_Mi_Cuenta" method="POST">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" value="Leonardo Nahuel" disabled><br><br>
+    
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" value="Torres" disabled><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" value="Torres.Leonardo.Nahuel@gmial.com" disabled><br><br>
+    
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" value="2964540360" disabled><br><br>
+    
+    <input type="button" value="Editar" onclick="habilitarEdicion()">
+  </form>
+  
+  <script>
+    function habilitarEdicion() {
+      var inputs = document.getElementsByTagName("input");
+      for (var i = 0; i < inputs.length; i++) {
+        if (inputs[i].type !== "button") {
+          inputs[i].removeAttribute("disabled");
+        }
+      }
+    }
+  </script>
     <footer>
 
     </footer>
