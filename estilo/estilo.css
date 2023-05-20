@@ -5,7 +5,25 @@ header {
   margin: 2px;
   -webkit-box-shadow: 0px 13px 15px -3px rgba(181,119,156,0.83);
   -moz-box-shadow: 0px 13px 15px -3px rgba(181,119,156,0.83);
-  height: 50px;
+  box-shadow: 0px 13px 15px -3px rgba(181,119,156,0.83);
+  margin-bottom: 3%;
+  border-radius: 10px;
+  border-bottom: #fff;
+
+}
+
+.logo {
+  margin-right: 20px; /* Agregar un margen a la derecha del logo */
+
+ }
+
+ .logo >a{
+  text-decoration: none;
+ }
+
+ .logo > a > img {
+  height: 80px;
+          padding:10px;
   padding: 10px 10px 5px 5px ;
 }
 
@@ -35,11 +53,19 @@ ul.menu{
     color: #fff;
     background-color: #b8779e;
     text-decoration: none;
+    border-radius: 10px;
   }
-
+  .menu > li > a:hover{
+    background-color: #94597c;
+    color: white;
+    box-shadow: 7px 7px 7px -8px rgba(255, 255, 255, 0.83);
+    }
+  /* .submenu > li > a:hover{
+      background-color: #5e344c;
+    }
 .submenu2 > li > a :hover{
     background-color: #b8779e;
-  } 
+  }  */
 
   
   @media screen and (max-width: 675px) {
@@ -73,6 +99,7 @@ ul.menu{
       }
       .logo > a > img {
         width: 20%;
+        height: 20%;
         padding: 10px;
         margin: 0 0 0 20px;
       }
@@ -86,5 +113,16 @@ ul.menu{
           flex-direction: column;
           
         }
-        
+        .menu > li > a{
+          margin-top: 3px;
+        }
+        .logo > a > img {
+          width: 70px;
+          height: 80px;
+          padding:10px 0px 0px 10px;
+          align-items: center;
+          justify-content: center;
+          margin: 0px 0px 0px 10px;
+        }
+       
     }
