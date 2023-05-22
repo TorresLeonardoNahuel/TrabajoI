@@ -13,73 +13,227 @@
     <!-- Incluir el encabezado -->
   <div id="header"></div>
 
-    
-        <h1>Tienda de Productos</h1>
-      
-    
-      <main>
-        <h2>Nuestros Productos</h2>
-    
-        <div class="product">
-          <img src="./img/Olla_Digital_Multifuncion.jpg" alt="Olla Digital Multifuncion Negra">
-          <div class="details">
-            <h3>Olla Digital Multifunción Black+decker® 3 Litros Mch14-ar</h3>
-            <p>Cocción a vapor. </br>
-              Con función de mantenimiento de calor.</br>
-              Capacidad en volumen de 3L.</br>
-              Ideal para la preparación de tus comidas diarias.</p>
-            <p>Precio: $23.990</p>
-            <button class="add-to-cart" onclick="agregarAlCarrito('Olla Digital Multifunción Black+decker ', 23990)">Agregar al Carrito</button>
-          </div>
+  
+  
+  
+  <section class="nav-section">
+    <Nav id="productoscat">
+      <ol class="categorias">
+          
+            <!-- 1 Decoracion  -->
+
+            <li><a href="#">Decoración</a>
+                <ul class="subcategorias">
+                    <li><a href="#">Cojines</a></li>
+                    <li><a href="#">Cortinas y persianas</a></li>
+                    <li><a href="#">Cuadros y espejos</a></li>
+                    <li><a href="#">Decoración de paredes</a></li>
+                    <li><a href="#">Alfombras y tapetes</a></li>
+                    <li><a href="#">Adornos y figuras decorativas</a></li>
+                </ul>
+            </li>
+            
+          <!-- 2 Muebles  -->
+            
+            <li><a href="#">Muebles</a>
+                <ul class="subcategorias">
+                    <li><a href="#">Sala</a>
+                        <ul class="subcategorias2">
+                            <li><a href="#">Sofás y sillones</a></li>
+                            <li><a href="#">Mesas de centro</a></li>
+                            <li><a href="#">Sistemas de entretenimiento</a></li>
+                        </ul>
+                    </li>
+          
+                    <li><a href="#">Comedor</a>
+                        <ul class="subcategorias2">
+                            <li><a href="#">Mesas y sillas</a></li>
+                            <li><a href="#">Vajilla y cubiertos</a></li>
+                            <li><a href="#">Cristalería</a></li>
+                        </ul>
+                    </li>
+          
+                    <li><a href="#">Recámara</a>
+                        <ul class="subcategorias2">
+                            <li><a href="#">Camas y cabeceras</a></li>
+                            <li><a href="#">Roperos y cajoneras</a></li>
+                            <li><a href="#">Sábanas y edredones</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Oficina en casa</a>
+                            <ul class="subcategorias2">
+                                <li><a href="#">Escritorios y sillas</a></li>
+                                <li><a href="#">Archiveros y estanterías</a></li>
+                                <li><a href="#">Accesorios de oficina</a></li>
+                            </ul>
+                    </li>
+            </ul>
+
+            </li>
+
+            <!-- 3 Cocina y Comedor  -->
+            
+            <li><a href="#">Cocina y comedor</a>
+                    <ul class="subcategorias">
+                        <li><a href="#">Utensilios de cocina</a>
+                                <ul class="subcategorias2">
+                                    <li><a href="#">Cacerolas y sartenes</a></li>
+                                    <li><a href="#">Tablas de cortar y cuchillos</a></li>
+                                    <li><a href="#">Batidoras y licuadoras</a></li>
+                                </ul>
+                        </li>
+                        
+                        <li><a href="#">Electrodomésticos</a>
+                                <ul class="subcategorias2">
+                                    <li><a href="#">Refrigeradores y congeladores</a></li>
+                                    <li><a href="#">Estufas y hornos</a></li>
+                                    <li><a href="#">Lavadoras y secadoras</a></li>
+                                </ul>
+                        </li>
+
+                        <li><a href="#">Accesorios de mesa</a>
+                                <ul class="subcategorias2">
+                                    <li><a href="#">Manteles y servilletas</a></li>
+                                    <li><a href="#">Porta vasos y posavasos</a></li>
+                                    <li><a href="#">Decoración para la mesa</a></li>
+                                </ul>
+                        </li>
+                    </ul>
+            </li>
+            
+          <!-- 4 Baño  -->
+            
+            <li><a href="#">Baño</a>
+                <ul class="subcategorias">
+                    <li><a href="#">Toallas y tapetes</a></li>
+                    <li><a href="#">Accesorios para baño</a>
+                            <ul class="subcategorias2">
+                                <li><a href="#">Dispensadores de jabón</a></li>
+                                <li><a href="#">Porta cepillos de dientes</a></li>
+                                <li><a href="#">Ganchos y barras para toallas</a></li>
+                            </ul>
+                    </li>
+                    <li><a href="#">Cortinas para baño</a></li>
+                </ul>
+            </li>
+            
+            <!-- 5 Iluminacion  -->
+
+            <li><a href="#">Iluminación</a>
+                <ul class="subcategorias">
+                    <li><a href="#">Lámparas de techo</a></li>
+                    <li><a href="#">Lámparas de mesa</a></li>
+                    <li><a href="#">Lámparas de pared</a></li>
+                    <li><a href="#">Lámparas de piso</a></li>
+                </ul>
+            </li>
+
+            <!-- 6 Jardin y Exteriores  -->
+
+            <li><a href="#">Jardín y exteriores</a>
+                <ul class="subcategorias">
+                    <li><a href="#">Muebles de jardín</a>
+                        <ul class="subcategorias2">
+                            <li><a href="#">Mesas y sillas</a></li>
+                            <li><a href="#">Sombrillas y toldos</a></li>
+                            <li><a href="#">Tumbonas y camastros</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Accesorios de jardín</a>
+                        <ul class="subcategorias2">
+                            <li><a href="#">Macetas y plantas artificiales</a></li>
+                            <li><a href="#">Herramientas de jardín</a></li>
+                            <li><a href="#">Iluminación para exteriores</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- 7 Organizacion y Almacenamiento  -->
+
+                <li><a href="#">Organización y almacenamiento</a>
+                    <ul class="subcategorias">
+                        <li><a href="#">Estanterías y libreros</a></li>
+                        <li><a href="#">Cajas y canastos</a></li>
+                        <li><a href="#">Gabinetes y armarioss</a></li>
+                        <li><a href="#">Organizadores para closet</a></li>
+                    </ul>
+                </li>
+
+      </ol>  
+    </Nav>
+  </section>
+
+
+
+
+  <seccion class="products-section">
+    <div class="product">
+        <img src="./img/Olla_Digital_Multifuncion.jpg" alt="Olla Digital Multifuncion Negra">
+        <div class="details">
+          <h3>Olla Digital Multifunción Black+decker® 3 Litros Mch14-ar</h3>
+          <p>Cocción a vapor. </br>
+            Con función de mantenimiento de calor.</br>
+            Capacidad en volumen de 3L.</br>
+            Ideal para la preparación de tus comidas diarias.</p>
+          <p>Precio: $23.990</p>
+          <button class="btn" onclick="agregarAlCarrito('Olla Digital Multifunción Black+decker ', 23990)">Agregar al Carrito</button>
         </div>
-    
-        <div class="product">
-          <img src="./img/Silla_Comedor_Negra.jpg" alt="Silla Comedor Negra">
-          <div class="details">
-            <h3>Silla de comedor Garden Life Eames, estructura color negro, 4 unidades</h3>
-            <p>Descripción del Producto 2.</br>
-              Estructura de polipropileno y madera y metal.</br>
-              Material de las patas: madera.</br>
-              Asiento de polipropileno.</br>
-              Silla apta para exterior.</br>
-              Peso máximo soportado: 120kg.</br>
-              Medidas: 83cm de alto x 55cm de ancho x 47cm de profundidad.</br>
-              Diseño y confort para tu hogar.</br>
-            </p>
-            <p>Precio: $31.159,18</p>
-            <button class="add-to-cart" onclick="agregarAlCarrito('Silla de comedor Garden ', 31159.18)">Agregar al Carrito</button>
-          </div>
+      </div>
+  
+      <div class="product">
+        <img src="./img/Silla_Comedor_Negra.jpg" alt="Silla Comedor Negra">
+        <div class="details">
+          <h3>Silla de comedor Garden Life Eames, estructura color negro, 4 unidades</h3>
+          <p>Descripción del Producto 2.</br>
+            Estructura de polipropileno y madera y metal.</br>
+            Material de las patas: madera.</br>
+            Asiento de polipropileno.</br>
+            Silla apta para exterior.</br>
+            Peso máximo soportado: 120kg.</br>
+            Medidas: 83cm de alto x 55cm de ancho x 47cm de profundidad.</br>
+            Diseño y confort para tu hogar.</br>
+          </p>
+          <p>Precio: $31.159,18</p>
+          <button class="btn" onclick="agregarAlCarrito('Silla de comedor Garden ', 31159.18)">Agregar al Carrito</button>
         </div>
-    
-        <div class="product">
-          <img src="./img/Smart_TV_Philips.jpg" alt="Smart TV Philips 7400 Series">
-          <div class="details">
-            <h3>Smart TV Philips 7400 Series 50PUD7406/77 LED Android 10 4K 50" 110V/240V</h3>
-            <p>Su resolución es 4K.</br>
-              Tecnología HDR para una calidad de imagen mejorada.</br>
-              Modo de sonido: Dolby Atmos, AI Sound.</br>
-              Manejalo por comando de voz.</br>
-              Con Prime Video, Disney+, YouTube, Netflix.</br>
-              Google Assistant incorporado.</br>
-              Sistema operativo Android 10.</br>
-              Capacidad de almacenamiento de 8GB.</br>
-              Conectá tus dispositivos mediante sus 4 puertos HDMI y sus 2 puertos USB.</br>
-              Dimensiones: 1113mm de ancho, 647.3mm de alto, 87.2mm de profundidad.</br>
-              Entretenimiento y conectividad en un mismo lugar..</p>
-            <p>Precio: $144.999</p>
-            <button class="add-to-cart" onclick="agregarAlCarrito('Smart TV Philips 7400 Series ', 144999)">Agregar al Carrito</button>
-          </div>
+      </div>
+  
+      <div class="product">
+        <img src="./img/Smart_TV_Philips.jpg" alt="Smart TV Philips 7400 Series">
+        <div class="details">
+          <h3>Smart TV Philips 7400 Series 50PUD7406/77 LED Android 10 4K 50" 110V/240V</h3>
+          <p>Su resolución es 4K.</br>
+            Tecnología HDR para una calidad de imagen mejorada.</br>
+            Modo de sonido: Dolby Atmos, AI Sound.</br>
+            Manejalo por comando de voz.</br>
+            Con Prime Video, Disney+, YouTube, Netflix.</br>
+            Google Assistant incorporado.</br>
+            Sistema operativo Android 10.</br>
+            Capacidad de almacenamiento de 8GB.</br>
+            Conectá tus dispositivos mediante sus 4 puertos HDMI y sus 2 puertos USB.</br>
+            Dimensiones: 1113mm de ancho, 647.3mm de alto, 87.2mm de profundidad.</br>
+            Entretenimiento y conectividad en un mismo lugar..</p>
+          <p>Precio: $144.999</p>
+          <button class="btn" onclick="agregarAlCarrito('Smart TV Philips 7400 Series ', 144999)">Agregar al Carrito</button>
         </div>
-    
-        <div class="cart">
-          <h3>Carrito de Compras</h3>
-          <div class="total">
-             Total: $00.00
-          </div>
+      </div>
+    </seccion>
+
+  <div class="cart-section">
+    <div class="cart">
+        <h3>Carrito de Compras</h3>
+        <div class="total">
+           Total: $00.00
         </div>
-      </main>
-    
+      </div>
+  </div>
+
+
+  
     <!-- Incluir el pie de página -->
   <div id="footer"></div>
+
 </body>
 </html>

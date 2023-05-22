@@ -5,7 +5,7 @@ body {
   /* font-family: Arial, sans-serif; */
   height: 100%;
 }
-header {
+header, .nav-section {
   display: flex;
   align-items: center; /* Centrar verticalmente los elementos */
   background-color:#b8779e; 
@@ -34,8 +34,8 @@ header {
   padding: 10px 10px 5px 5px ;
 }
 
-nav{
-   display: flex;
+nav {
+    display: flex;
     align-items: flex-end;
     justify-content: flex-end;
     width: 100%;
@@ -44,7 +44,8 @@ ul.menu{
   height: 100%;
 }
 /* Estilos para el menú principal */
-.menu {
+.menu
+{
     list-style: none;
     margin: 0;
     padding: 20px;
@@ -53,29 +54,26 @@ ul.menu{
 
   .menu > li {
     display: inline-block;
+    margin: 15px;
   }
 
-  .menu > li > a {
+  .menu > li > a
+  {
     padding: 20px;
     color: #fff;
     background-color: #b8779e;
     text-decoration: none;
     border-radius: 10px;
   }
-  .menu > li > a:hover{
-    background-color: #94597c;
+  .menu > li > a:hover {
+    /* background-color: #94597c; */
     color: white;
-    box-shadow: 7px 7px 7px -8px rgba(255, 255, 255, 0.83);
+    box-shadow:  0px 0px 15px 5px #866278;
     }
-  /* .submenu > li > a:hover{
-      background-color: #5e344c;
-    }
-.submenu2 > li > a :hover{
-    background-color: #b8779e;
-  }  */
+   
 
   
-  @media screen and (max-width: 675px) {
+  @media screen and (max-width: 900px) {
       header{
         display: block;
         text-align: center;
@@ -97,13 +95,18 @@ ul.menu{
       .menu li{
         width: 100%;
         justify-content: center;
+        margin: 10px;
       }
       .menu li a{
         display: block ;  
         padding: 7px 0px 7px 0px;
+       
         width: 100%;
 
       }
+      .menu > li > a:hover{
+        box-shadow:  0px 0px 5px 3px #866278;
+        }
       .logo > a > img {
         width: 20%;
         height: 20%;
@@ -113,12 +116,15 @@ ul.menu{
       
   }
 
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 513px) {
        
         ul.menu{
           display: flex;
           flex-direction: column;
           
+        }
+        .menu li{
+          margin: 0;
         }
         .menu > li > a{
           margin-top: 3px;
@@ -133,49 +139,87 @@ ul.menu{
         }
        
     }
-    form {
+    /* Formulario */
+    .container {
       max-width: 400px;
-      margin: 0 auto;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 7px;
+      box-shadow:  0px 0px 10px 13px rgba(0, 0, 0, 0.1);
+    }
+    .container2 {
+      max-width: 80%;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 7px;
+      box-shadow:  0px 0px 10px 13px rgba(0, 0, 0, 0.1);
+    }
+    h1{
+      text-align: left;
+      margin: 0 0 20px 20px;
+      color: #94597c;
+    }h2 {
+     
+      margin-bottom: 30px;
+      color: #94597c;
+    }
+    .form-group {
+      margin: 0 20px 20px 0;
     }
 
     label {
       display: block;
-      margin-top: 10px;
+      margin-bottom: 5px;
+      color: #94597c;
     }
 
-    input, textarea {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="tel"],
+    textarea{
       width: 100%;
-      padding: 8px;
-      margin-top: 5px;
-      margin-bottom: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
+      padding: 10px;
+      border: 2px solid #b386a1;
+      border-radius: 7px;
+      transition: border-color 0.3s ease;
+    }
+    textarea{
+      min-height: 80px;
     }
 
-    textarea {
-      height: 100px;
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="password"]:focus,
+    input[type="tel"]:focus,
+    textarea:focus{
+      outline: none;
+      /* border-color: #866278; */
+      /* border: 4px solid #866278; */
+      box-shadow:  0px 0px 5px 1px #866278;
     }
 
-    input[type="submit"] {
-      background-color: #b8779e;
-      color: white;
+    .btn {
+      display: inline-block;
+      padding: 10px 30px;
+      background-color: #d3abc3;
+      color: #000000;
+      text-decoration: none;
+      border-radius: 7px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #774764;
+      color: #fff;
+      border-color: #fff;
       cursor: pointer;
     }
 
-    input[type="submit"]:hover {
-      background-color:  #94597c;
-    }
-    input[type="button"] {
-      background-color:#b8779e;
-      color: white;
-      cursor: pointer;
-    }
-    input[type="button"]:hover {
-      background-color:  #94597c;
-    }
-
+    /* Productos */
     main {
-      max-width: 800px;
       margin: 20px auto;
       padding: 0 20px;
     }
@@ -228,13 +272,91 @@ ul.menu{
     }
     div#footer{
     display: flex;
+    max-height: 100%;
+    background-color: #fcedf6;
+    text-align: justify;
+    line-height: 60px;
+  } 
+
+
+
+
+ 
+ 
+ /* Estilos generales */
+ 
+ #productoscat {
+  width: 100%;
+  display: flex;
   
-    align-items: flex-end;
-    justify-content: center;
-    height: 60px;
-      background-color: #fcedf6;
-      text-align: center;
-      line-height: 60px;
-    
-    
-    }
+}
+
+#productoscat .categorias {
+  list-style: none;
+  display: flex;
+}
+
+#productoscat .categorias li {
+  position: relative;
+}
+
+#productoscat .categorias li a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+#productoscat .categorias .subcategorias {
+  display: none;
+  position: relative;
+  list-style: none;
+  top: 0;
+  padding-top: 10px;
+}
+
+#productoscat .categorias .subcategorias2 {
+  display: none;
+  position: relative;
+  list-style: none;
+  top: 0;
+  padding-top: 10px;
+}
+
+/* Mostrar subcategorías al pasar el ratón */
+#productoscat .categorias li:hover > .subcategorias {
+  display: block;
+}
+
+#productoscat .subcategorias li:hover > .subcategorias2 {
+  display: block;
+}
+
+/* Estilos adicionales para la barra de menú */
+
+  
+  
+
+  .products-section {
+    float: left;
+    width: 60%;
+  }
+
+  .cart-section {
+    clear: both;
+  }
+
+  /* Estilos de ejemplo para las secciones */
+  
+
+  .products-section {
+    background-color: #b8779e;
+    padding: 20px;
+    color: #fff;
+  }
+
+  .cart-section, .cart {
+    background-color: #94597c;
+    padding: 20px;
+    color: #fff;
+  }
