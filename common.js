@@ -43,14 +43,21 @@ $(function() {
     removeButton.textContent = 'Eliminar';
     removeButton.addEventListener('click', function() {
         quitarDelCarrito(item, precio);
+        
     });
+    
+    var hr = document.createElement('hr');
+    hr.classList.add('separador');
+    
+
     item.appendChild(removeButton);
     cart.insertBefore(item, cart.firstChild);
-
+    
     var totalElement = document.querySelector('.total');
     var total = parseFloat(totalElement.innerHTML.split(':')[1].trim().slice(1));
     total += precio;
     totalElement.innerHTML = 'Total: $ ' + total.toFixed(2);
+    item.insertBefore(hr, removeButton);
     }
 //Para productos quitar producto al carrito
 function quitarDelCarrito(item, precio) {
