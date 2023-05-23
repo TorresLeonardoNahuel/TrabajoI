@@ -65,7 +65,7 @@ ul.menu{
     color: #fff;
     text-decoration: none;
     background-color:#ce86e0;
-    font-size: 22px;
+    font-size: 16px;
     
     border-radius: 10px;
   }
@@ -144,7 +144,7 @@ ul.menu{
     }
     /* Formulario */
     .container {
-      max-width: 450px;
+      max-width: 500px;
       margin: 20px auto;
       padding: 20px;
       border-radius: 7px;
@@ -158,43 +158,46 @@ ul.menu{
       padding: 20px;
       border-radius: 7px;
       background-color: #472a4e;
-      font-size: 18px;
+      font-size: 15px;
       box-shadow: 0px 0px 10px 0px #e6c5f3;
       color: #fff;
     }
     .container2 mark{
       color: #fff;
-      font-size: 18px;
+      font-size: 16px;
       background-color: #8A5397;
     }
-    .container2 em{
-      font-size: 20px;
-    }
+    .container2 em,
     .container2 strong{
-      font-size: 20px;
+      font-size: 16px;
     }
     .container2 H1{
-      font-size: 60PX;
+      font-size: 40PX;
       text-align: left;
     }
     .container2 H2{
-      font-size: 50PX;
+      font-size: 30PX;
       text-align: center;
       margin-left: 3PX;
     }
     .container2 H3{
-      font-size: 30PX;
+      font-size: 25PX;
       text-align: center;
     }
     h1{
       text-align: center;
       margin: 0 0 20px 20px;
-      font-size: 60px;
-      color: #fff;
-    }h2 {
-      margin-left: 10%;
       font-size: 40px;
       color: #fff;
+    }
+    h2 {
+      margin-left: 10%;
+      font-size: 30px;
+      color: #fff;
+    }
+    .cart-section h2,
+    .products-section h2 {
+      text-align: center;
     }
     .form-group {
       margin: 0 20px 20px 0;
@@ -203,7 +206,7 @@ ul.menu{
     label {
       display: block;
       margin-bottom: 5px;
-      font-size: 18px;
+      font-size: 15px;
       color: #fff;
     }
 
@@ -214,7 +217,7 @@ ul.menu{
     textarea{
       width: 100%;
       padding: 10px;
-      font-size: 18px;
+      font-size: 15px;
       border: 2px solid #fff;
       background-color: #ecebf3;
       color: #000;
@@ -246,15 +249,15 @@ ul.menu{
     input[type="password"]:disabled,
     input[type="tel"]:disabled{
       outline: none;
-      color: #2c2b2b;
-      background-color: #a895b6;
+      color: #c9c2cf;
+      background-color: #8d7e9c;
     }
     input[type="text"]::placeholder,
     input[type="email"]::placeholder,
     input[type="password"]::placeholder,
     input[type="tel"]::placeholder{
       
-      color: #AA67BB;
+      color: #ccb2d3;
     }
 
     .btn {
@@ -264,7 +267,7 @@ ul.menu{
       
       color: #fff;
       text-decoration: none;
-      font-size: 18px;
+      font-size: 15px;
       border-radius: 7px;
       transition: background-color 0.3s ease;
       margin-top: 10px;
@@ -284,7 +287,7 @@ ul.menu{
     }
 
     .product {
-      font-size: 18px;
+      font-size: 15px;
       display: flex;
       margin-bottom: 20px;
       
@@ -341,7 +344,7 @@ ul.menu{
       border-radius: 10px;
       box-shadow: inset 0px 0px 10px 0px #c578d8;
       padding: 10px;
-      font-size: 30px;
+      font-size: 20px;
       text-align: center;
     }
     div#footer{
@@ -353,7 +356,7 @@ ul.menu{
     line-height: 25px;
     box-shadow: 0px 0px 10px 0px #e6c5f3;
     color: #fff;
-    font-size: 15px;
+    font-size: 13px;
   } 
 
 
@@ -372,7 +375,7 @@ ul.menu{
   box-shadow: 0px 0px 10px 0px #e6c5f3;  
   min-height: 50px;
   margin-bottom: 1.5%;
-  font-size: 18px;
+  font-size: 16px;
   border-radius: 5px;
 }
 
