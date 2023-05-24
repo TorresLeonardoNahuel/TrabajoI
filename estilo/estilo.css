@@ -33,7 +33,7 @@ header {
 
  .logo > a > img {
   height: 80px;
-  box-shadow:  0px 0px 15px 10px  #c578d8;
+  box-shadow: 0px 0px 20px 10px  #c578d8;
 }
 
 nav {
@@ -57,6 +57,7 @@ ul.menu{
   .menu > li {
     display: inline-block;
     margin: 15px;
+    
   }
 
   .menu > li > a
@@ -64,14 +65,15 @@ ul.menu{
     padding: 20px;
     color: #fff;
     text-decoration: none;
-    background-color:#ce86e0;
+    background-color:#472a4e;
+    box-shadow:inset 0px 0px 7px 1px  #c578d8;
     font-size: 16px;
-    
+    border-width: 10px;
+    border-color: #fff;
     border-radius: 10px;
   }
   .menu > li > a:hover {
-    background-color: #472a4e;
-    box-shadow: 0px 0px 7px 3px  #c578d8;
+    box-shadow: 0px 0px 25px 5px  #c578d8;
     color: #fff;
     
     }
@@ -263,20 +265,19 @@ ul.menu{
     .btn {
       display: inline-block;
       padding: 15px 30px;
-      background-color:#ce86e0 ;
-      
+      background-color:#472a4e;
+      box-shadow:inset 0px 0px 7px 1px  #ddb1ec;
       color: #fff;
       text-decoration: none;
       font-size: 15px;
       border-radius: 7px;
       transition: background-color 0.3s ease;
+      border: none;
       margin-top: 10px;
     }
 
     .btn:hover {
-      background-color:#472a4e;
-      box-shadow: 0px 0px 10px 0px #e6c5f3;
-      color: #fff;
+      box-shadow: 0px 0px 25px 5px  #ddb1ec;
       cursor: pointer;
     }
 
@@ -388,6 +389,7 @@ ul.menu{
 
 #productoscat .categorias li {
   position: relative;
+  border-radius: 5px;
   margin: 0 15px 0 15px;
 }
 
@@ -395,37 +397,39 @@ ul.menu{
   display: block;
   padding: 10px;
   color: #fff;
+  text-align: center;
   text-decoration: none;
+  margin-right: 15px;
+  border-radius: 5px;
+  min-width: 150px;
+  box-shadow:  0px 0px 10px 2px #42264d;
+
 }
 
-#productoscat .categorias .subcategorias {
+#productoscat .categorias .subcategorias,
+#productoscat .categorias .subcategorias2{
   display: none;
   position: relative;
-  /* list-style: none; */
-  top: 0;
+  border-radius: 5px;
   padding: 5px 0 5px 5px;
 }
-
-#productoscat .categorias .subcategorias2 {
-  display: none;
-  position: relative;
-  /* list-style: none; */
-  top: 0;
-  padding-top: 10px;
+#productoscat .categorias .subcategorias li a,
+#productoscat .categorias .subcategorias2 li a{
+  margin: 7px;
 }
+
 
 /* Mostrar subcategorías al pasar el ratón */
 #productoscat .categorias li:hover, 
-#productoscat .categorias li:hover > .subcategorias {
+#productoscat .categorias li:hover > .subcategorias,
+#productoscat .subcategorias li:hover > .subcategorias2{
   display: block;
-  background-color: #301227;
 }
-#productoscat .subcategorias li:hover,
-#productoscat .subcategorias li:hover > .subcategorias2 {
-  display: block;
-  background-color: #490e4b;
-}#productoscat .subcategorias li:hover > .subcategorias2:hover{
-  background-color: #4c0c96;
+#productoscat .categorias li a:hover,
+#productoscat .subcategorias li a:hover,
+#productoscat .subcategorias li > .subcategorias2 li a:hover{
+
+  box-shadow: 0px 0px 15px 5px #e6c5f3;  
 }
 
 /* Estilos adicionales para la barra de menú */
