@@ -3,6 +3,9 @@ $(function() {
     $("#header").load("header.html");
     // Cargar el pie de página
     $("#footer").load("footer.html");
+    // Cargar Nav-Productos
+    $("#Nav-Productos").load("Nav-Productos.html");
+
   });
 
 //   Para el Boton de Editar y Guardar en Mi Cuenta

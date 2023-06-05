@@ -369,43 +369,36 @@ header {
 
 
 
- /* Estilos generales */
+ /* Menu productos */
 
- #productoscat {
-  width: 100%;
+ .productoscat {
   color: #fff;
   padding: 5px 0px 5px 0px;
-  background-color: #8A5397;
+  background-color: #61366B;
   box-shadow: 0px 0px 10px 0px #e6c5f3;
   margin-bottom: 1.5%;
   font-size: 16px;
   border-radius: 5px;
-  display: none;
 }
 
-#productoscat .categorias {
-  display: flex;
+.tlo{
   color: #fff;
-  width: 100%;
+}
+.tlo:hover{
+  color: #fff;
   
-
 }
 
-#productoscat .categorias li {
+.productoscat .categorias li {
   
   border-radius: 5px;
   margin: 5px;
   padding: 5px;
-  display:flexbox;
-  /* width: 120px;*/
-  align-items: center;
-  justify-content: space-around; 
   
 }
 
 
-#productoscat .categorias li a {
-  width: 100%;
+.productoscat .categorias li a {
   background-color: #cb92d8;
   padding: 5px;
   color: #fff;
@@ -416,71 +409,30 @@ header {
   box-shadow:  0px 0px 10px 2px #42264d;
 
 }
-#productoscat .categorias .subcategorias{
-  display: flexbox;
+/* .productoscat .categorias .subcategorias{
+ 
   border-radius: 5px;
   padding: 5px 0 5px 5px;
-}
-#productoscat .categorias .subcategorias li a{
+}*/
+.productoscat .categorias .subcategorias li a{
   background-color: #9240a5;
   
 }
-#productoscat .categorias .subcategorias2 li a{
+.productoscat .categorias .subcategorias2 li a{
   background-color: #50135e;
 }
-
-#productoscat .categorias .subcategorias li,
-#productoscat .categorias .subcategorias2 li{
+/*
+.productoscat .categorias .subcategorias li,
+.productoscat .categorias .subcategorias2 li{
   margin: 10px 0px 0px 0px;
-}
-
-
-/*Mostrar subcategorías al pasar el ratón */
-/* #productoscat .categorias li:hover,
-#productoscat .categorias li:hover > .subcategorias,
-#productoscat .subcategorias li:hover > .subcategorias2{
-  display: block;
-}
-#productoscat .categorias li a:hover,
-#productoscat .subcategorias li a:hover,
-#productoscat .subcategorias li > .subcategorias2 li a:hover{
-
-  box-shadow: 0px 0px 15px 5px #e6c5f3;
 } */
-
-/* Estilos adicionales para la barra de menú */
-
-
- .cart{
-  background-color: #472A4E;
-  border-radius: 10px;
-  text-align: center;
-  width: 100%;
-  padding: 5px;
-  display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-}
-
-  .cart-section {
-    padding: 5px;
-    width: 21%;
-    display: flex;
-    flex-wrap: wrap;
-    align-content:flex-start;
-    background-color: #472A4E;
-    box-shadow: 0px 0px 10px 0px #e6c5f3;
-    border-radius: 10px;
-  }
 
   /* Estilos de ejemplo para las secciones */
 
 
   .products-section {
     background-color: #472A4E;
-    margin-left:5px;
     padding: 5px;
-    width: 77%;
     color: #fff;
     margin-bottom: 20px;
     box-shadow: 0px 0px 10px 0px #e6c5f3;
@@ -492,11 +444,24 @@ header {
     display: flex;
 
   }
+  .cart-section {
+    padding: 5px;
+    background-color: #472A4E;
+    box-shadow: 0px 0px 10px 0px #e6c5f3;
+    border-radius: 10px;
+  }
+  .cart{
+    background-color: #472A4E;
+    border-radius: 10px;
+    text-align: center; 
+    padding: 5px;
+  }
 
-
-  #prod-conteiner{
+  .compra{
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
-    margin: 0px;
+  }
+  .prod-conteiner{
+    width: 100%;
+    margin: 0;
   }
