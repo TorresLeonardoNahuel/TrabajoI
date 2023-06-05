@@ -69,3 +69,16 @@ function quitarDelCarrito(item, precio) {
     total -= precio;
     totalElement.innerHTML = 'Total: $ ' + total.toFixed(2);
     }
+
+//Para ocultar el menu de Productos  
+function toggleButton() {
+var toggleButton = document.getElementById('toggleButton');
+var productoscat = document.getElementById('productoscat');
+
+toggleButton.addEventListener('click', function() {
+  if (productoscat.style.display === 'none') {
+    productoscat.style.display = 'block';
+  } else {
+    productoscat.style.display = 'none';
+  }
+})}
